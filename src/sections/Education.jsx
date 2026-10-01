@@ -7,7 +7,6 @@ function Education() {
         id="education"
         className="section-space border-t border-black/10 bg-[#f4f4ef] px-6 text-black md:px-10"
       >
-        {/* EDITORIAL LABEL */}
         <div className="mb-12 flex items-center justify-between border-b border-black/10 pb-4 sm:mb-14 md:mb-16">
           <span className="editorial-label text-black/40">
             03 — Education
@@ -18,7 +17,6 @@ function Education() {
           </span>
         </div>
 
-        {/* HEADER */}
         <div className="mb-14 flex items-end justify-between sm:mb-16 md:mb-20">
           <div>
             <div className="overflow-hidden">
@@ -29,7 +27,7 @@ function Education() {
 
             <div className="overflow-visible">
               <h2 className="display-font overflow-visible py-2 translate-y-full text-[17vw] uppercase leading-[0.82] tracking-[-0.02em] transition-transform delay-100 duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] sm:text-[16vw] md:text-[14vw] group-[.is-visible]:translate-y-0">
-                Learning
+                Foundation
               </h2>
             </div>
           </div>
@@ -39,18 +37,14 @@ function Education() {
           </span>
         </div>
 
-        {/* EDUCATION ITEM */}
         <div className="border-t border-black/20">
           <div className="grid gap-8 border-b border-black/20 py-8 sm:gap-10 sm:py-10 md:grid-cols-[0.7fr_2fr_0.8fr] md:items-start md:gap-16">
-
-            {/* YEAR */}
             <div>
               <p className="text-[10px] uppercase tracking-[0.3em] text-black/40 sm:text-xs">
                 2022 — 2026
               </p>
             </div>
 
-            {/* MAIN */}
             <div>
               <h3 className="text-2xl font-medium tracking-[-0.04em] sm:text-3xl md:text-5xl">
                 Bachelor of Engineering
@@ -61,15 +55,13 @@ function Education() {
               </p>
 
               <p className="mt-6 max-w-2xl text-sm leading-7 text-black/60 sm:mt-8 sm:text-base">
-                Jawaharlal Nehru National College of Engineering,
-                Shivamogga. Focused on software development,
-                databases, web technologies and exploring
-                AI-driven applications through academic and
-                personal projects.
+                B.E. in Information Science & Engineering at JNNCE,
+                Shivamogga. I built a strong base in software development,
+                databases and web technologies, then put it to work in
+                hands-on projects, from full-stack apps to AI-driven systems.
               </p>
             </div>
 
-            {/* LOCATION */}
             <div className="md:text-right">
               <p className="text-[10px] uppercase tracking-[0.3em] text-black/40 sm:text-xs">
                 JNNCE
@@ -82,15 +74,12 @@ function Education() {
           </div>
         </div>
 
-        {/* BOTTOM NOTE */}
         <div className="mt-6 flex items-center justify-between sm:mt-8">
           <p className="text-[10px] uppercase tracking-[0.25em] text-black/30 sm:text-xs">
             2026 Graduate
           </p>
 
-          <span className="text-xl sm:text-2xl">
-            ↓
-          </span>
+          <span className="text-xl sm:text-2xl">↓</span>
         </div>
       </section>
     </Reveal>

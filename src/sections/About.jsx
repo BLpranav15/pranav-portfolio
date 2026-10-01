@@ -26,6 +26,37 @@ function About() {
     return () => observer.disconnect()
   }, [])
 
+  const skills = [
+    {
+      name: 'Python',
+      description: 'backend logic & data',
+    },
+    {
+      name: 'Django',
+      description: 'scalable web backends',
+    },
+    {
+      name: 'React',
+      description: 'fast, interactive interfaces',
+    },
+    {
+      name: 'JavaScript',
+      description: 'the language of the web',
+    },
+    {
+      name: 'MySQL',
+      description: 'relational design & queries',
+    },
+    {
+      name: 'Git',
+      description: 'version control & teamwork',
+    },
+    {
+      name: 'AI / ML',
+      description: 'recommendation systems',
+    },
+  ]
+
   return (
     <section
       ref={sectionRef}
@@ -66,15 +97,15 @@ function About() {
           }`}
         >
           <p className="text-xs uppercase tracking-[0.3em] text-white/40">
-            Based in India
+            Bengaluru, India · Open to Roles
           </p>
 
           <p className="mt-4 text-sm leading-7 text-white/60">
-            Information Science & Engineering
+            B.E. Information Science & Engineering
           </p>
 
           <p className="mt-1 text-sm leading-7 text-white/60">
-            JNNCE, Shivamogga
+            JNNCE · Class of 2026
           </p>
         </div>
 
@@ -88,9 +119,8 @@ function About() {
                 : 'translate-y-10 opacity-0'
             }`}
           >
-            I'm B L Pranav, an entry-level developer who enjoys
-            building web applications, working with data and
-            exploring AI-driven ideas.
+            I'm B L Pranav, a full-stack developer who turns ideas
+            into reliable, data-driven web products.
           </p>
 
           {/* DESCRIPTION */}
@@ -101,9 +131,10 @@ function About() {
                 : 'translate-y-10 opacity-0'
             }`}
           >
-            I work mainly with Python, Django, React, JavaScript
-            and MySQL. I like turning ideas into practical projects
-            and continuously improving how I build and solve problems.
+            I build with Python, Django, React and MySQL, and I'm
+            most interested where clean engineering meets data and AI.
+            I'm currently interning at Pentagon Space, shipping real
+            features and looking for the next problem worth solving.
           </p>
 
           {/* SKILLS */}
@@ -116,7 +147,7 @@ function About() {
           >
             <div className="flex items-center justify-between border-b border-white/15 py-4 sm:py-5">
               <span className="text-[10px] uppercase tracking-[0.3em] text-white/40 sm:text-xs">
-                What I Work With
+                My Toolkit
               </span>
 
               <span className="text-[10px] text-white/30 sm:text-xs">
@@ -124,32 +155,30 @@ function About() {
               </span>
             </div>
 
-            {[
-              'Python',
-              'Django',
-              'React',
-              'JavaScript',
-              'MySQL',
-              'Git',
-              'AI / ML',
-            ].map((skill, index) => (
+            {skills.map((skill, index) => (
               <div
-                key={skill}
-                className="group flex items-center justify-between border-b border-white/15 py-4 transition-opacity duration-300 hover:opacity-50 sm:py-5"
+                key={skill.name}
+                className="group flex items-center justify-between gap-6 border-b border-white/15 py-4 transition-opacity duration-300 hover:opacity-50 sm:py-5"
               >
-                <div className="flex items-center gap-4 sm:gap-5">
-                  <span className="text-[9px] text-white/30 sm:text-[10px]">
+                <div className="flex min-w-0 items-center gap-4 sm:gap-5">
+                  <span className="shrink-0 text-[9px] text-white/30 sm:text-[10px]">
                     0{index + 1}
                   </span>
 
                   <span className="text-lg tracking-[-0.02em] sm:text-xl md:text-2xl">
-                    {skill}
+                    {skill.name}
                   </span>
                 </div>
 
-                <span className="text-lg text-white/30 transition-transform duration-300 group-hover:translate-x-2 group-hover:-translate-y-1 sm:text-xl">
-                  ↗
-                </span>
+                <div className="flex min-w-0 items-center gap-4">
+                  <span className="text-right text-[9px] uppercase tracking-[0.12em] text-white/30 sm:text-[10px] sm:tracking-[0.15em] md:text-xs">
+                    {skill.description}
+                  </span>
+
+                  <span className="shrink-0 text-lg text-white/30 transition-transform duration-300 group-hover:translate-x-2 group-hover:-translate-y-1 sm:text-xl">
+                    ↗
+                  </span>
+                </div>
               </div>
             ))}
           </div>

@@ -4,11 +4,11 @@ import { useEffect, useRef, useState } from 'react'
 const experiences = [
   {
     number: '01',
-    role: 'Software Development Intern',
-    company: 'Pentagon',
+    role: 'Python Full-Stack Development Intern',
+    company: 'Pentagon Space',
     period: 'Internship',
     description:
-      'Worked on practical software development tasks and gained hands-on exposure to development workflows, problem solving and building applications in a professional environment.',
+      'Building and shipping full-stack features with Python, Django and React. I work inside real development workflows: version control, debugging and collaborative delivery.',
   },
 ]
 

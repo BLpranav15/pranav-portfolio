@@ -3,24 +3,24 @@ import { useEffect, useRef, useState } from 'react'
 const certifications = [
   {
     number: '01',
-    title: 'Data Structures & Algorithms in Python',
+    title: 'Data Structures & Algorithms in Python : Sorting Algorithms',
     issuer: 'Infosys Springboard',
     year: '2026',
-    link: '#',
+    link: 'https://drive.google.com/file/d/1kuhLz4BLkGzdVK8fnJdcXNZjlL6067Ei/view?usp=drive_link',
   },
   {
     number: '02',
-    title: 'Computational Theory: Language Principle',
+    title: 'Computational Theory: Language Principle & Finite Automata',
     issuer: 'Infosys Springboard',
     year: '2026',
-    link: '#',
+    link: 'https://drive.google.com/file/d/1ZW4170vGZbV2Nk3SvNDCpp6l4eyweIWD/view?usp=drive_link',
   },
   {
     number: '03',
     title: 'Python for Data Science',
     issuer: 'NPTEL',
     year: '2026',
-    link: '#',
+    link: 'https://drive.google.com/file/d/1oRm7-YEDn7238cs7LA2IetcntgT4uEPY/view?usp=drive_link',
   },
 ]
 
@@ -154,7 +154,7 @@ function Certifications() {
       {/* BOTTOM */}
       <div className="mt-6 flex items-center justify-between sm:mt-8">
         <p className="text-[10px] uppercase tracking-[0.25em] text-white/30 sm:text-xs">
-          Always Learning
+          STILL LEVELING UP
         </p>
 
         <span className="text-lg text-white/30 sm:text-xl">

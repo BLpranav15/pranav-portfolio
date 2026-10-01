@@ -116,7 +116,7 @@ function Work() {
                   : 'translate-y-full'
               }`}
             >
-              Projects
+              Things I’ve Built                                                                                                                                                                                                                                                                                                                                                                                     
             </h2>
           </div>
         </div>

@@ -66,7 +66,7 @@ function App() {
 
           {/* STATUS */}
           <p className="text-[10px] uppercase tracking-[0.25em] text-black/30 sm:text-xs">
-            Available for opportunities
+            Open to Work · 2026
           </p>
         </div>
       </footer>
